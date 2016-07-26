@@ -1,0 +1,67 @@
+{{!< default}}
+<div class="row hero">
+    <div class="col lg-8">
+    	<h1> Hi I'm a Product Designer.
+    	</h1>
+        <p>I observe human patterns and real life activities and build platforms that engage them in the easiest way possible. Previously built products for <a href="http://3loq.com">3LOQ</a>, <a href="http://cafyne.com">Cafyne</a>, <a href="http://bitchemy.com">BitChemy</a> and <a href="http://saddahaq.com">Saddahaq</a>.</p>
+        <p>I'm currently exploring full-time opportunities.</p>
+    </div>
+</div>
+<div class="row work-container">
+	<h1 class="title">
+	Select Work
+	</h1>
+	{{#foreach posts}}
+	<div class="inner cover post">
+		<h1 class="cover-heading post-title"><a href="{{url}}">{{{title}}}</a></h1>
+		<p>
+		{{excerpt words="26"}} ...
+		</p>
+		<a href="{{url}}" class="case-study"> View Case Study</a>
+	</div>
+	{{/foreach}}
+</div>
+<div class="row work-container">
+	<h1 class="title">
+	Select Writing
+	</h1>
+</div>
+<div class="row work-container">
+	<div class="inner cover post col-lg-6">
+		<h3 class="cover-heading post-title"><a href="https://medium.com/@imran_parvez/journey-of-design-in-tech-4e830ee8a208">Journey of Tech in Design</a></h3>
+		<p>
+		How design has become stangnant in tech.
+		</p>
+		<a href="https://medium.com/@imran_parvez/journey-of-design-in-tech-4e830ee8a208"> Read more</a>
+	</div>
+	<div class="inner cover post col-lg-6">
+		<h3 class="cover-heading post-title"><a href="https://medium.com/@imran_parvez/notification-overload-c88a31bfaa8e">Notification Overload?</a></h3>
+		<p>
+		Research on mobile Notifications.
+		</p>
+		<a href="https://medium.com/@imran_parvez/notification-overload-c88a31bfaa8e"> Read more</a>
+	</div>
+</div>
+<div class="row work-container">
+	<div class="inner cover post col-lg-6">
+		<h3 class="cover-heading post-title"><a href="https://medium.com/@imran_parvez/navigating-history-in-mobiles-39e012f60d22">Navigating History in Mobiles</a></h3>
+		<p>
+		A new interaction pattern.
+		</p>
+		<a href="https://medium.com/@imran_parvez/journey-of-design-in-tech-4e830ee8a208"> Read more</a>
+	</div>
+	<div class="inner cover post col-lg-6">
+		<h3 class="cover-heading post-title"><a href="https://medium.com/@imran_parvez/designing-settings-b2a96878961b">Designing Settings</a></h3>
+		<p>
+		Research on how to design settings.
+		</p>
+		<a href="https://medium.com/@imran_parvez/notification-overload-c88a31bfaa8e"> Read more</a>
+	</div>
+</div>
+{{!--
+{{!! After all the posts, we have the previous/next pagination links }}
+{{pagination}}
+--}}
+<div class="inner cover container post post-foot">
+</div>
+

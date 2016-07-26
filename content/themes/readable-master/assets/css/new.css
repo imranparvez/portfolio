@@ -1,0 +1,99 @@
+html, body{
+	text-align: left;
+	font-family: 'Merriweather', serif;
+	font-size: 16px;
+	line-height: 1.8em;
+	font-weight: 300;
+}
+
+.hero{
+	padding:3rem 20px ;
+}
+.hero h1{
+	font-size: 3rem;
+	font-weight: 700;
+	color:#FF5000;
+	padding:0;
+	margin:0;
+	margin-bottom:1rem;
+
+}
+
+.hero p{
+	font-size: 1.5rem;
+	line-height: 2.4rem;
+}
+
+.work-container .title{
+	color:#FF5000;
+	font-weight: 700;
+	margin-bottom: 1rem;
+	padding:0 20px;
+	font-size: 3rem;
+}
+
+.post-title a, .post-title{
+	color:#161D41;
+	font-weight: 700;
+	border: none;
+	margin: 0 0 .3rem 0;
+	padding:0;
+}
+
+.post{
+	margin-bottom: 3rem;
+}
+
+.masthead-brand{
+	font-size: 1.5rem;
+}
+
+a, a:focus, a:hover{
+	border-bottom: 5px solid #64FCD8;
+	margin-bottom: 5px;
+	text-decoration: none;
+}
+
+.nav a{
+	margin-bottom: 0;
+	border: none;
+}
+
+
+
+/* ------ single post ------*/
+
+.single-post{
+	margin-top: 3rem;
+}
+
+.single-post .post-title{
+	font-size: 3rem;
+	font-weight: 700;
+	color:#FF5000;
+	margin-bottom: 1rem;
+}
+
+.single-post h1,.single-post h2,.single-post h3{
+	color:#474b57;
+	margin:2rem 0 1rem 0;
+	font-weight: 700;
+}
+.single-post h3{
+	color:#767D8F;
+}
+.single-post p{
+	margin-bottom 1rem;
+}
+.single-post img{
+	padding: 1rem 0;
+}
+
+/* ----- site footer -----*/
+.site-footer{
+	text-align: center;
+}
+
+.post-foot h4{
+	margin-bottom:1.2rem;
+}
