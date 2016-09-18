@@ -16,7 +16,8 @@
   "bugs": "https://github.com/TryGhost/Ghost/issues",
   "contributors": "https://github.com/TryGhost/Ghost/graphs/contributors",
   "license": "MIT",
-  "main": "./core/index",
+  "main": "./index",
+  // "main": "./core/index",
   "scripts": {
     "preinstall": "npm install semver && node -e \"require('./core/server/utils/startup-check.js').nodeVersion()\"",
     "start": "node index",

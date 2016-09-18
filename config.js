@@ -11,7 +11,7 @@ config = {
     // When running Ghost in the wild, use the production environment.
     // Configure your URL and mail settings here
     production: {
-        url: 'http://imranparvez.com',
+        url: process.env.OPENSHIFT_APP_DNS ? 'http://' + process.env.OPENSHIFT_APP_DNS : 'http://localhost:2368',
         mail: {},
         database: {
             client: 'sqlite3',
@@ -22,9 +22,15 @@ config = {
         },
 
         server: {
-            host: '0.0.0.0',
-            port: process.env.port 
-        }
+            // Host to be passed to node's `net.Server#listen()`
+            host: process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1',
+            // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
+            port: process.env.OPENSHIFT_NODEJS_PORT || '2368'
+        } 
+        // server: {
+        //     host: '127.0.0.1',
+        //     port: process.env.port 
+        // }
     },
 
     // ### Development **(default)**
@@ -53,7 +59,7 @@ config = {
         database: {
             client: 'sqlite3',
             connection: {
-                filename: path.join(__dirname, '/content/data/ghost-dev.db')
+                filename: path.join(__dirname, '/content/data/ghost.db')
             },
             debug: false
         },
